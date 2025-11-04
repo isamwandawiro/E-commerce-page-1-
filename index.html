@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <title>E-commerce product page</title>
+</head>
+<body>
+   <header>
+      <nav>
+     <span >
+      <img src="images/logo.svg" alt="Logo" style="height: 50px; width: auto;">
+    </span>
+    <ul class=" nav-links">
+      <li><a href="#">Collections</a></li>
+      <li><a href="#">Men</a></li>
+      <li><a href="#">Women</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+    <span>
+        <img src="images/icon-cart.svg" alt="Cart" style="height: 30px; width: auto;">
+    </span>
+    <span>
+        <img src="images/image-avatar.png" alt="User" style="height: 30px; width: auto;">
+    </span>
+    </div>
+  </nav>
+  </header>
+
+
+  <main>
+    <section class="product-container">
+    <div class="product-gallery">
+        <div class="main-image">
+          <img src="images/image-product-1.jpg" alt="Product Image" style="width: 50%;">
+            </div>
+        <div class="thumbnail-images">
+        <img src="images/image-product-1-thumbnail.jpg" alt="Thumbnail Image 1" style="width: 20%;">
+        <img src="images/image-product-2-thumbnail.jpg" alt="Thumbnail Image 2" style="width: 20%;">
+        <img src="images/image-product-3-thumbnail.jpg" alt="Thumbnail Image 3" style="width: 20%;">
+        <img src="images/image-product-4-thumbnail.jpg" alt="Thumbnail Image 4" style="width: 20%;">
+        </div>
+    </div> 
+
+      <div class="product-info">
+        <h1>Sneaker Company</h1>
+        <h2> Fall Limited Edition Sneakers</h2>
+        <p class="description">
+          These low-profile sneakers are your perfect casual wear companion.
+          <br> Featuring a durable rubber outer sole,
+          <br> they'll withstand everything the weather can offer.
+        </p>
+
+        <div class="price-container">
+          <span class="price">$125.00</span>
+          <span class="discount">50%</span>
+        </div>
+        <span class="old-price">$250.00</span> 
+
+        <div class="add-to-cart-section">
+          <div class="quantity-selector">
+            <button class="minus">-</button>
+            <input type="number" value="0" min="0">
+            <button class="plus">+</button>
+          </div>
+        <button class="add-to-cart-btn">
+        <img src="images/cart-white.svg" alt="Cart icon">
+               Add to cart
+        </button> 
+      </div>
+    </section>
+  </main>
+</body>
+</html>
