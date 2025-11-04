@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 16px;
+}
+
+/* Header styles */
+header {
+    padding: 1rem;
+    border-bottom: 1px solid hsl(220, 14%, 90%);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+.logo h1 {
+    font-size: 1.5rem;
+    color: hsl(220, 13%, 13%);
+}
+
+.nav-links {
+    display: flex; /* Hidden on mobile */
+    list-style: none;
+    gap: 2rem;
+    margin-left: 3rem;
+}
+/* Update your existing navigation styles */
+.nav-links li {
+    padding: 1.5rem 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: hsl(220, 13%, 13%);
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+
+.nav-links a:hover {
+    color: hsl(220, 13%, 13%);
+    border-bottom: 3px solid hsl(26, 100%, 55%);
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.cart img {
+    width: 20px;
+    height: 20px;
+}
+
+.profile img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+/* Product styles */
+.product-container {
+    width: 100%;
+}
+
+.product-gallery {
+    position: relative;
+}
+
+.main-image {
+    margin-top:20px;
+    width: 100%;
+    height: 300px;
+}
+
+.main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.thumbnail-images {
+    display: none;/* Hidden on mobile */
+}
+
+/* Product info styles */
+.product-info {
+    padding: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.company {
+    color: hsl(26, 100%, 55%);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    color: hsl(220, 13%, 13%);
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.description {
+    color: hsl(219, 9%, 45%);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+/* Price styles */
+.price-container {
+    margin-bottom: 1.5rem;
+}
+
+.current-price {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.price {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: hsl(220, 13%, 13%);
+}
+
+.discount {
+    background-color: hsl(25, 100%, 94%);
+    color: hsl(26, 100%, 55%);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-weight: 700;
+}
+
+.original-price {
+    color: hsl(220, 14%, 75%);
+    text-decoration: line-through;
+}
+
+/* Cart section styles */
+.add-to-cart-section {
+    width: 50%;
+}
+
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    background-color: hsl(223, 64%, 98%);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.quantity-selector button {
+    border: none;
+    background: none;
+    padding: 1rem 1.5rem;
+    color: hsl(26, 100%, 55%);
+    font-weight: 700;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.quantity-selector input {
+    border: none;
+    background: none;
+    text-align: center;
+    font-weight: 700;
+    width: 100%;
+}
+
+.add-to-cart-btn {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    background-color: hsl(26, 100%, 55%);
+    color: white;
+    font-weight: 700;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    cursor: pointer;
+    box-shadow: 0 20px 30px -10px hsla(26, 100%, 55%, 0.3);
+}
+
+.add-to-cart-btn img {
+    width: 16px;
+    height: 16px;
+}
+
+/* Media query for hover states */
+@media (hover: hover) {
+    .add-to-cart-btn:hover {
+        opacity: 0.7;
+    }
+
+    .quantity-selector button:hover {
+        opacity: 0.7;
+    }
+}
